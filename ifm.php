@@ -58,7 +58,7 @@ if(isset($_POST["api"])) {
 		if(isset($_POST["dir"]) && isPathValid($_POST["dir"]))
 			getFiles($_POST["dir"]);
 		else
-			getFiles("");
+			getFiles("/");
 	}
 	else {
 		if(isset($_POST["dir"]) && isPathValid($_POST["dir"])) {
